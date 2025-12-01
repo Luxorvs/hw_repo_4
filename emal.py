@@ -26,8 +26,8 @@ print(f"Пункт 2. Добавляем дату: ", email)
 email["from"] = email["from"].strip().lower()
 email["to"] = email["to"].strip().lower()
 print(
-    f"""Пункт 3. Правим адреса', 
-        {email["from"]}, 
+    f"""Пункт 3. Правим адреса '
+        {email["from"]} 
         {email["to"]}"""
 )
 
@@ -127,7 +127,7 @@ is_subject_empty = not email["subject"].strip()
 is_body_empty = not email["body"].strip()
 print(
     f"""Пункт 12.Проверяем пустоту темы и тела письма.
-        Пустая тема письма: , {is_subject_empty})
+        Пустая тема письма: , {is_subject_empty}
         Пустое тело письма: , {is_body_empty}"""
 )
 
@@ -142,5 +142,5 @@ personal_domens.remove("bk.ru")
 print("Пункт 14. Чистим список личных доменов ", personal_domens)
 
 # Итог
-print(f"\n\nИтог:")
+print(f"\nИтог:")
 pprint(email)
