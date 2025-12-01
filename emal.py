@@ -86,7 +86,7 @@ print(
 
 check = set(personal_domens) & set(corporate_domens)
 if check:
-    print(f"Пункт 7. перечения : {check}")
+    print(f"Пункт 7. пересечения : {check}")
 
 # 8.Проверьте «корпоративность» отправителя:
 # создайте булеву переменную is_corporate, равную результату проверки
@@ -134,7 +134,7 @@ print(
 # 13. Создайте «маску» e-mail отправителя: первые 2 символа логина + "***@" + домен.
 # Запишите в email["masked_from"].
 email["masked_from"] = login[:2] + "***@" + domain
-print("Пункт 13. Создаеv «маску» e-mail отправителя: ", email["masked_from"])
+print("Пункт 13. Создаем «маску» e-mail отправителя: ", email["masked_from"])
 
 # 14. Удалите из списка личных доменов значения "list.ru" и "bk.ru".
 personal_domens.remove("list.ru")
