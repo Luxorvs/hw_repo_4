@@ -26,7 +26,7 @@ print(f"Пункт 2. Добавляем дату: ", email)
 email["from"] = email["from"].strip().lower()
 email["to"] = email["to"].strip().lower()
 print(
-    f"""Пункт 3. Правим адреса '
+    f"""Пункт 3. Правим адреса
         {email["from"]} 
         {email["to"]}"""
 )
@@ -77,7 +77,7 @@ corporate = [
 personal_domens = list(set(personal))
 corporate_domens = list(set(corporate))
 print(
-    f"""Пункт 6. 
+    f"""Пункт 6. Списки доменов.
         Личные домены {personal_domens}
         Корпоративные домены: {corporate_domens}"""
 )
@@ -127,19 +127,19 @@ is_subject_empty = not email["subject"].strip()
 is_body_empty = not email["body"].strip()
 print(
     f"""Пункт 12.Проверяем пустоту темы и тела письма.
-        Пустая тема письма: , {is_subject_empty}
-        Пустое тело письма: , {is_body_empty}"""
+        Пустая тема письма: {is_subject_empty}
+        Пустое тело письма: {is_body_empty}"""
 )
 
 # 13. Создайте «маску» e-mail отправителя: первые 2 символа логина + "***@" + домен.
 # Запишите в email["masked_from"].
 email["masked_from"] = login[:2] + "***@" + domain
-print("Пункт 13. Создаеv «маску» e-mail отправителя", email["masked_from"])
+print("Пункт 13. Создаеv «маску» e-mail отправителя: ", email["masked_from"])
 
 # 14. Удалите из списка личных доменов значения "list.ru" и "bk.ru".
 personal_domens.remove("list.ru")
 personal_domens.remove("bk.ru")
-print("Пункт 14. Чистим список личных доменов ", personal_domens)
+print("Пункт 14. Чистим список личных доменов: ", personal_domens)
 
 # Итог
 print(f"\nИтог:")
